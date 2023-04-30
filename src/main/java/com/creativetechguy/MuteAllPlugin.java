@@ -35,7 +35,6 @@ public class MuteAllPlugin extends Plugin {
 
     @Override
     protected void startUp() throws Exception {
-        config.seenAlert(false);
         if (client.getGameState() == GameState.LOGGED_IN) {
             if (!config.seenAlert()) {
                 showAlert();
